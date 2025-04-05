@@ -1,0 +1,70 @@
+<!--http://localhost/luiz/-->
+
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Aula 2</title>
+
+    <style>
+        p {
+            font-size: 20px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        #t1 { /* id */
+            color: red; /* cor */
+            font-size: 40px; /* tamanho da letra */
+            font-style: italic; /* italico */
+            font-weight: bold; /* negrito */
+            font-variant: small-caps; /* Deixa a letra toda mauiscula, mas a primeira letra é diferente */
+            text-decoration: underline; /* Sublinado e suas variações, podendo até riscar*/
+            text-indent: 50px; /* identação, é a diferença na primeira linha a margem */
+            text-shadow: 10px 10px 5px green; /*sombra -> horizontal, vertical, tamanho e cor */
+        }
+
+        .t2 { /* classe */
+            text-align: center;
+            /*text-transform: lowercase; /* todo o texto em minusculo  */
+            text-transform: uppercase;  /*todo o texto em mausculo */
+            letter-spacing: normal; /* Tamanho do espaço entre as letras */
+            word-spacing: normal; /* Tamanho do espaço entre as letras */
+        }
+    </style>
+
+</head>
+<body>
+    <p id="t1">Aula 2</p>
+    <p class="t2">ADS em andamento</p>
+    <p class="t2">Aula</p>
+</body>
+</html>
+
+
+<!-- inline
+ <body>
+    <p style="font-size: 20px;">Aula 2</p>
+</body>
+-->
+
+<!-- interno 
+<head>
+    <meta charset="UTF-8">
+    <title>Aula 2</title>
+    <style>
+        p {font-size: 20px;}
+    </style>
+</head>
+-->
+
+<!-- Externo
+criado em outra pagina-->
+
+
+<!-- Todo negrito e paragrafo sofre alteração
+p, strong {
+    color: blue;
+}
+
+Só sofre alteração se for um negrito dentro de um paragrafo
+p strong {
+    color: blue;
+} -->
