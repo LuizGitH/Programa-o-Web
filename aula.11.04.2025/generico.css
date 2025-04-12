@@ -1,0 +1,35 @@
+h1 {
+    color: blue;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    text-shadow: 5px 5px 5px black;
+}
+
+ul {
+    /* list-style-type: disc; Trocar simbologia*/ 
+    list-style-image: url('../img/seta.jpg');
+    width: 200px; /* largura */
+    border-color: chartreuse;
+    border-width: 5px;
+    border-style: solid;
+}
+
+ul li {
+    
+}
+
+ul li.fla {
+    background-color: red;
+}
+
+ul li.sant {
+    background-color:blueviolet;
+}
+
+ul li.palm {
+    background-color:chocolate;
+}
+
+ul li.sao {
+    background-color:darkgreen;
+}
