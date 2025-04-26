@@ -1,0 +1,20 @@
+img {
+    width: 200px; /* Alterar o tamanho da imagem */
+    border-color: black; /* cor da borda */
+    border-style: dotted; /* estilo da borda*/
+    border-width: 2px; /* tamanho da borda */
+}
+
+body {
+    background-image: url(../img/maomao2.jpg); /* imagem de fundo */
+    background-size: 5%; /* tamanho */
+    background-repeat: repeat; /* escolhe como trabalha a imagem */
+}
+
+#img1 {
+    background-image: url(../img/maomao3.jpg);
+    width: 200px;
+    height: 200px;
+    background-size: 100%;
+
+}
