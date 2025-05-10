@@ -1,0 +1,26 @@
+#especial {
+    background-color: red;
+    text-align: center;
+}
+
+th, td, table {
+    border: 1px solid black;
+    
+}
+
+#centralizado {
+    text-align: center;
+}
+
+th {
+    color: white;
+    background-color:darkgray;
+}
+
+#corDiferente {
+    background-color: rgba(116, 103, 103, 0.548);
+}
+
+table {
+    margin: auto;
+}

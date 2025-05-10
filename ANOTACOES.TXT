@@ -1,0 +1,37 @@
+<head>
+    <link rel="stylesheet" href="{{nome do codigo CSS}}"> -> Vincula o codigo ao arquivo CSS
+</head>
+
+__________________________________________________________________________________________________________________________
+
+<body>
+    <hr> -> Cria uma linha
+
+    <table></table> ->Cria uma tabela
+
+    <tr>{{th ou tr}}</tr> -> É uma linha da tabela
+
+    <th>{{texto}}</th> -> É uma coluna da tabela com formatação diferente
+
+    <td>{{texto}}</td> -> É uma linha da tabela
+
+    <th colspan="{{núm de linhas}}"></th> --> colspan mescla as linhas
+
+    <td rowspan="{{núm de colunas}}"></td> --> rowspan mescla as colunas
+
+
+</body>
+
+__________________________________________________________________________________________________________________________
+
+CSS
+
+    color: {{cor em ingles}} -> pinta a letra
+
+    background-color: {{cor em ingles}}; ->pinta o fundo das coisas
+
+    border: {{espesura, 1 px}} {{tipo, solido}} {{cor}}; -> Borda
+
+    text-align: {{tipo de alinhamento, center}}; -> tipo de alinhamento
+
+    margin: auto; -> Centraliza a tabela
