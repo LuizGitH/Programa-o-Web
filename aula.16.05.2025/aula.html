@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    div{
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+    input[type=text], select {
+      width: 100%;
+      padding: 12px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+    input[type=submit] {
+      width: 100%;
+      background-color: cadetblue;
+      color: white;
+      padding: 14px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 20px;
+    }
+    label {
+      font-family: Arial;
+    }
+    input[type=submit]:hover {
+      background-color: green;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <form action="">
+      <label for="n">Nome</label>
+      <input type="text" id="n" placeholder="Digite seu nome">
+
+      <label for="end">Endereço</label>
+      <input type="text" id="end" placeholder="Digite seu endereço">
+
+      <label for="pais">País</label>
+      <select id="pais">
+        <option value="Brasil">Brasil</option>
+        <option value="EUA">EUA</option>
+        <option value="Portugal">Portugal</option>
+      </select>
+      <input type="submit" value="Cadastrar">
+    </form>
+  </div>
+</body>
+</html>

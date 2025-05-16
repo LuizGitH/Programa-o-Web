@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+	<fieldset>
+		<legend> Formulario de Cadastro </legend>
+		<form action="" method="GET"> 
+			<p>Nome: <br> <input type="text" name="nome"  autofocus></p>
+			<p>Endereço: <br> <input type="text" name="end" placeholder="Digite o Endereço"></p>
+			<p>Senha: <br> <input type="password" name="senha"></p>
+			<p>Email: <br> <input type="email" name="email"></p>
+			<p>Data de nascimento: <br> <input type="date" name="data"></p>
+			<p>Horário: <br> <input type="time" name="hora"></p>
+			<p>Idade: <br> <input type="number" name="idade" step="2" min="1900" max="1990"></p>
+			<p>Volume: <br> <input type="range"></p>
+			<p>Cor: <br> <input type="color"></p>
+			<p>Site: <br> <input type="url"></p>
+			<p>Anexo: <input type="file"></p>
+			<p>Sexo: <br> 
+				<input type="radio" name="s">Masculino <br>
+				<input type="radio" name="s">Feminino
+			</p>
+			<p>
+				Curso: <br>
+				<input type="checkbox">ADS <br>
+				<input type="checkbox">Engenharia <br>
+				<input type="checkbox">Química <br>
+				<input type="checkbox">Comércio
+			</p>
+			<p>Mensagem: <br>
+				<textarea name="" rows="10" cols="50"></textarea>
+			</p>
+			<p>Estado: <br>
+				<select name="">
+					<optgroup label="NORTE">
+						<option value="">Amazonas</option>
+						<option value="">Acre</option>
+					</optgroup>
+					<optgroup label="CENTRO-OESTE">
+						<option value="">Goiás</option>
+						<option value="">Distrito Federal</option>
+					</optgroup>
+				</select>
+			</p>
+			<p>Cidades: <br>
+				<input type="text" list="lista">
+				<datalist id="lista">
+					<option value="Uruaçu"></option>
+					<option value="Campinorte"></option>
+					<option value="Sena Madureira"></option>
+					<option value="Terezina"></option>
+				</datalist>		
+			</p>
+
+			<p><input type="submit" value="Enviar"></p>
+		</form>
+	</fieldset>
+</body>
+</html>
