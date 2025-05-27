@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <style>
+            .font1{
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 30px;
+                color:gray;
+                text-transform: uppercase;
+                text-align: center;
+            }
+            legend{
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 15px;
+                color:gray;
+                text-transform: uppercase;
+            }
+            label{
+                font-family:  Arial, Helvetica, sans-serif;
+                font-size: 10px;
+                color:gray;
+                text-transform: uppercase;
+                margin: 5px;
+            }
+
+            input{
+                width:100%;
+                color: lightblue;
+                font-size: 10px;
+                margin: 5px;
+                padding: 10px;
+                border:  1px solid gray;
+                border-radius: 5px;
+                box-sizing: border-box;
+            }
+
+            input:focus{
+                background-color: beige;
+            }
+
+            input[type=submit]{
+                background-color: dimgray;
+                font-size: 15px;
+                color:  white;
+            }
+            input[type=submit]:hover{
+                background-color: darkgray;
+                color: black;
+                cursor:  pointer;
+            }
+            fieldset{
+                width: 50%;
+                border-radius: 10px;
+                margin: auto;
+                box-shadow: 10px 10px 10px black;
+            }
+
+        </style>
+    </head>
+    <body>
+
+    <p class="font1">Formulário de inscrição</p>
+    <fieldset>
+        <legend>Preencha seus dados</legend>
+        <p>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome"  id="nome">
+        </p>
+
+        <p>
+            <label for="email">Email:</label>
+            <input type="email" name="email"  id="email">
+        </p>
+
+        <p>
+            <label for="end">Endereço:</label>
+            <input type="text" name="end" id="end">
+        </p>
+
+        <p>
+            <label for="city">Cidade</label>
+            <input type="text" name="city"  id="city">
+        </p>
+
+        <p>
+            <label for="fone">Telefone</label>
+            <input type="tel" name="fone"  id="fone">
+        </p>
+
+        <p>
+            <label for="usuario">Usuário</label>
+            <input type="text" name="usuario"   id="usuario">
+        </p>
+
+        <p>
+            <label for="senha">Senha</label>
+            <input type="password" name="senha"   id="senha">
+        </p>
+
+        <p>
+            <input type="submit" value="Finalizar Inscrição">
+        </p>
+    </fieldset>
+    </body>
+</html>
