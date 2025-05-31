@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            margin: 8px 0;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 10px;
+        }
+        div.marg {
+            border-radius: 5px;
+            background-color:rgb(128, 170, 13);
+            padding: 20px;
+            margin: 10% 10%  auto;
+        }
+
+        div.margen{
+            display: flex;
+            border: 2px solid beige;
+            background-color: rgba(240, 254, 255, 0.233);
+            border-radius: 10px;
+            
+        }
+
+        input{
+            margin: auto;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #3c4700;     
+            color: white;                  
+            padding: 10px 30px;            
+            font-weight: bold;                      
+            border: none;                 
+            border-radius: 25px;                      
+            display: flex;               
+            margin: 20px auto 0;          
+        }
+
+        textarea {
+            display: flex;
+            margin: auto;
+        }
+
+        
+
+
+        
+
+    </style>
+</head>
+<body>
+    <div class="marg">
+        <form action="">
+            <div>Step 1: Your details</div>
+
+            <div class="margen">
+                <label for="">Nome</label>
+                <input type="text" id="" placeholder="First and last name">
+            </div>
+
+            <div class="margen">
+                <label for="">Email</label>
+                <input type="text" id="" placeholder="example@domain.com">
+            </div>
+
+            <div class="margen">
+                <label for="">Phone</label>
+                <input type="text" id="" placeholder="Eg. +447500000000">
+            </div>
+            
+            <div>Step 2: Delivery address</div>
+
+            <div class="margen">
+                <label for="">Address</label>
+				<textarea name="" rows="10" cols="50" ></textarea>
+            </div>
+
+
+            <div class="margen">
+                <label for="">Post code</label>
+                <input type="text">
+            </div>
+
+            <div class="margen">
+                <label for="">Country</label>
+                <input type="text">
+            </div> 
+
+            <div>Step 3: Card details</div>
+
+            <div class="margen">
+                <label for="card-type">Card type</label><br>
+                <input type="radio" name="card" id="visa" class="te"> 
+                <div><img src="https://img.icons8.com/color/24/000000/visa.png"/> VISA</div>
+                <input type="radio" name="card" id="amex" class="te"> 
+                <div><img src="https://img.icons8.com/color/24/000000/amex.png"/>AmEx</div>
+                <input type="radio" name="card" id="mastercard" class="te"> 
+                <div><img src="https://img.icons8.com/color/24/000000/mastercard.png"/>Mastercard</div>
+            </div>
+
+            <div class="margen">
+                <label for="">Card number</label>
+                <input type="text">
+            </div>
+
+            <div class="margen">
+                <label for="">Security code</label>
+                <input type="text">
+            </div>
+
+            <div class="margen">
+                <label for="">Name on card</label>
+                <input type="text" placeholder="Exact name as on the card">
+            </div>
+
+            <div>
+                <input type="submit" value="BUY IT!">
+            </div>
+        </form>
+        
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style>
+    div{
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      position: fixed;
+      animation-duration: 3s;
+      animation-delay: 1s;
+      animation-iteration-count: infinite;
+    }
+    #d1{
+      background-color: green;
+      top: 0px;
+      left: 0px;
+      animation-name: exemplo_01;
+    }
+
+    #d2{
+      background-color: red;
+      top: 0px;
+      left: 400px;
+      animation-name: exemplo_02;
+    }
+
+    #d3{
+      background-color: yellow;
+      top: 400px;
+      left: 400px;
+      animation-name: exemplo_03;
+    }
+
+    #d4{
+      background-color: blue;
+      top: 400px;
+      left: 0px;
+      animation-name: exemplo_04;
+    }
+
+    @keyframes exemplo_01 {
+      0% {top: 0px; left: 0px;}
+      25% {top: 0px; left: 400px;}
+      50% {top: 400px; left: 400px;}
+      75% {top: 400px; left: 0px;}
+      100% {top: 0px; left: 0px;}
+    }
+    @keyframes exemplo_04 {
+      0% {top: 400px; left: 0px;}
+      25% {top: 0px; left: 0px;}
+      50% {top: 0px; left: 400px;}
+      75% {top: 400px; left: 400px;}
+      100% {top: 400px; left: 0px;}
+    }
+    @keyframes exemplo_02 {
+      0% {top: 0px; left: 400px;}
+      25% {top: 400px; left: 400px;}
+      50% {top: 400px; left: 0px;}
+      75% {top: 0px; left: 0px;}
+      100% {top: 0px; left: 400px;}
+    }
+    @keyframes exemplo_03 {
+      0% {top: 400px; left: 400px;}
+      25% {top: 400px; left: 0px;}
+      50% {top: 0px; left: 0px;}
+      75% {top: 0px; left: 400px;}
+      100 {top: 400px; left: 400px;}
+    
+  </style>
+</head>
+<body>
+<div id="d1"></div>
+<div id="d2"></div>
+<div id="d3"></div>
+<div id="d4"></div>
+</body>
+</html>

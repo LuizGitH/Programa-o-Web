@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <style>
+            p{
+                font-size: 30px;
+                column-count: 3;
+                column-gap: 25px;
+                column-rule-style: dotted;
+                column-rule-width: 2px;
+                column-rule-color: red;
+
+            }
+
+            img{
+                float: right;
+                transition-property: width 3s;
+            }
+
+            img:hover{
+                width: 300px;
+            }
+            div {
+                width: 250px;
+                background-color: burlywood;
+                height: 250px;
+                overflow: auto;
+                position: relative;
+                z-index: 3;
+
+            }
+
+            #d2{
+                width: 200px;
+                background-color: aqua;
+                position: relative;
+                top: 100px;
+                left: -100px;
+                z-index: 2;
+            }
+
+            #d3 {
+                width: 500px;
+                height: 300px;
+                background: linear-gradient(to top, deepskyblue,  black );
+         /*       border-radius: 50%;
+                box-shadow:
+                    inset 10px 10px 0px #000,
+                    inset -10px -10px 0px #000
+                ;
+*/          transition: width 3s;
+            }
+
+            #d3:hover {
+                width: 300px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="d3">
+
+        </div>
+        <p>
+            <img src="../img/maomao.jpg" alt="" width="200px" >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </p>
+        <div>
+            lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </div>
+
+        <div id="d2">
+            lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </div>
+    </body>
+</html>
