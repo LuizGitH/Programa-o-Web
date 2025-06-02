@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        #d1 {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient( black, gray, white);
+            border-radius: 50%;
+            position: relative;
+            animation-name: ex1;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+
+        }
+        @keyframes ex1 {
+            from {left:0; transform: rotate(0deg);}
+            to {left: 300px; transform: rotate(200deg);}
+        }
+    </style>
+</head>
+<body>
+<div id="d1"></div>
+</body>
+</html>

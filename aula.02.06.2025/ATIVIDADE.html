@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+      <style>
+        div{
+          width: 100px;
+          height: 100px;
+          background: linear-gradient(90deg,rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+          position: fixed;
+          border-radius: 50%;
+
+        }
+
+        #d2, #d4{
+          animation-duration: 3s;
+          animation-delay: 1s;
+          animation-fill-mode: forwards;
+          animation-iteration-count: infinite;
+
+          }
+
+        #d1{
+          top: 10px;
+          left: 200px;
+        }
+        #d2{
+          animation-name: ex1;
+          top: 150px;
+          left: 10px
+        }
+        #d3{
+          top: 10px;
+          left: 420px;
+        }
+        #d4{
+          top: 400px;
+          left: 10px;
+          animation-name: ex2;
+          animation-delay: 4s;
+        }
+        #d5{
+          top: 10px;
+          left: 640px;
+        }
+        #d6{
+          top: 10px;
+          left: 750px;
+        }
+
+        @keyframes ex1 {
+          0% {top: 150px;
+          left: 10px;
+          transform: rotate(0deg)}
+          50% {top: 150px;
+          left: 310px;
+          transform: rotate(100deg)}
+          100% { top: 10px;
+          left: 310px;
+          transform: rotate(0deg)}
+        }
+        @keyframes ex2 {
+        0% {top: 400px;
+        left: 10px;
+        transform: rotate(0deg)}
+        50% {top: 400px;
+        left: 530px;
+        transform: rotate(100deg)}
+        100% { top: 10px;
+        left: 530px;
+        transform: rotate(0deg)}
+        }
+      </style>
+</head>
+<body>
+  <div id="d1"></div>
+  <div id="d2"></div>
+  <div id="d3"></div>
+  <div id="d4"></div>
+  <div id="d5"></div>
+  <div id="d6"></div>
+</body>
+</html>
