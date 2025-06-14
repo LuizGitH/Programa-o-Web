@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Mesa de Sinuca</title>
+  <style>
+    body {
+      background: #d9f3ff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .mesa {
+      position: relative;
+      width: 700px;
+      height: 350px;
+      background: #228B22;
+      border: 20px solid #8B4513;
+      border-radius: 20px;
+    }
+    .buraco {
+      width: 40px;
+      height: 40px;
+      background: #000;
+      border-radius: 50%;
+      position: absolute;
+    }
+    /* Canto superior esquerdo */
+    .buraco1 { top: -20px; left: -20px; }
+    .buraco2 { top: -20px; left: 50%; transform: translateX(-50%); }
+    .buraco3 { top: -20px; right: -20px; }
+    .buraco4 { bottom: -20px; left: -20px; }
+    .buraco5 { bottom: -20px; left: 50%; transform: translateX(-50%); }
+    .buraco6 { bottom: -20px; right: -20px; }
+
+    .bola-branca {
+      width: 20px;
+      height: 20px;
+      background: white;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      left: 45%;
+      transform: translate(-50%, -50%);
+    }
+
+    .taco {
+      position: absolute;
+      width: 250px;
+      height: 5px;
+      background: linear-gradient(to right, #8B4513, #fff);
+      top: 50%;
+      left: 15%;
+      transform: translateY(-50%);
+    }
+
+    .bolas {
+      position: absolute;
+      top: 50%;
+      left: 75%;
+      transform: translate(-50%, -50%);
+    }
+
+    .bola {
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      position: absolute;
+      text-align: center;
+      font-size: 10px;
+      color: #fff;
+      line-height: 16px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+<div class="mesa">
+  <!-- Buracos -->
+  <div class="buraco buraco1"></div>
+  <div class="buraco buraco2"></div>
+  <div class="buraco buraco3"></div>
+  <div class="buraco buraco4"></div>
+  <div class="buraco buraco5"></div>
+  <div class="buraco buraco6"></div>
+
+  <!-- Taco -->
+  <div class="taco"></div>
+
+  <!-- Bola branca -->
+  <div class="bola-branca"></div>
+
+  <!-- Bolas coloridas em triângulo -->
+  <div class="bolas">
+    <!-- Aqui vou adicionar algumas bolas como exemplo -->
+    <div class="bola" style="top: 0; left: 0; background: red;">3</div>
+    <div class="bola" style="top: 18px; left: -10px; background: blue;">2</div>
+    <div class="bola" style="top: 18px; left: 10px; background: yellow;">1</div>
+    <div class="bola" style="top: 36px; left: -20px; background: green;">6</div>
+    <div class="bola" style="top: 36px; left: 0px; background: black;">8</div>
+    <div class="bola" style="top: 36px; left: 20px; background: orange;">5</div>
+  </div>
+</div>
+</body>
+</html>

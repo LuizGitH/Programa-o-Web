@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    div {
+      width: 50px;
+      height: 50px;
+      border: 4px solid black;
+      border-radius: 50%;
+      position: fixed;
+      animation-fill-mode: forwards;
+    }
+    #d1 {
+      left: 100px;
+      background-color: green;
+      top:0;
+      animation-name: d1;
+      animation-duration: 2s;
+      animation-delay: 9s;
+    }
+    @keyframes d1 {
+      0% {left:100px; top:0px;}
+      25% {left:100px; top: 10px}
+      100% {left: 0px; top: 10px;}
+    }
+    #d2 {
+      left:180px;
+      background-color: cornflowerblue;
+      top:0;
+      animation-name: d2;
+      animation-duration: 2s;
+      animation-delay: 9s;
+    }
+    @keyframes d2 {
+      0% {left:180px; top:0px;}
+      25% {left:180px; top: 80px}
+      100% {left: 0px; top: 80px;}
+    }
+    #d3 {
+      top: 100px;
+      background: linear-gradient(gray, black, gray);
+      box-shadow: 2px 2px 5px black;
+      animation-name: d3;
+      animation-duration: 2s;
+    }
+    @keyframes d3 {
+      0% {left:0px; top:100px;}
+      75% {left:260px; top: 100px}
+      100% {left: 260px; top: 0px;}
+    }
+    #d4 {
+      left: 340px;
+      background-color: gold;
+      border-color: cornflowerblue;
+      top:0;
+    }
+    #d5 {
+      left: 420px;
+      background-color: green;
+      top:0;
+    }
+    #d6 {
+      top: 180px;
+      background: linear-gradient(white 40%, black);
+      box-shadow: 2px 2px 5px black;
+      animation-name: d6;
+      animation-duration: 2s;
+      animation-delay: 3s;
+    }
+    @keyframes d6 {
+      0% {left:0px; top:180px;}
+      75% {left:500px; top: 180px}
+      100% {left: 500px; top: 0px;}
+    }
+    #d7 {
+      left: 580px;
+      background-color: gray;
+      border-color: red;
+      top:0;
+    }
+    #d8 {
+      top: 260px;
+      background: linear-gradient(orange, cornflowerblue);
+      box-shadow: 2px 2px 5px black;
+      animation-name: d8;
+      animation-duration: 2s;
+      animation-delay: 6s;
+    }
+    @keyframes d8 {
+      0% {left:0px; top:260px;}
+      75% {left:660px; top: 260px}
+      100% {left: 660px; top: 0px;}
+    }
+  </style>
+</head>
+<body>
+<div id="d1"></div>
+<div id="d2"></div>
+<div id="d3"></div>
+<div id="d4"></div>
+<div id="d5"></div>
+<div id="d6"></div>
+<div id="d7"></div>
+<div id="d8"></div>
+</body>
+</html>

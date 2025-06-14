@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Exemplo das Bandeiras</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url('https://bobinex.fbitsstatic.net/img/p/adesivo-em-rolo-camurca-azul98250/285603.jpg?w=570&h=570&v=no-change&qs=ignore');
+      background-size: cover;
+    }
+
+    .flag {
+      position: fixed;
+      width: 30px;
+      height: 20px;
+      border: 3px solid white;
+      box-shadow: 5px 5px 5px black;
+      background-size: cover;
+      background-position: center;
+      animation: growAndRotate 2s forwards;
+      transition: background-image 2s, border 2s;
+    }
+
+    .flag:hover {
+      cursor: pointer;
+      border: 3px solid black;
+    }
+
+    /* Posicionamentos específicos */
+    #flag1 {
+      top: 50px;
+      left: 50px;
+      background-image: url('https://static.todamateria.com.br/upload/ba/nd/bandeiradobrasil-2-cke.jpg');
+    }
+
+    #flag2 {
+      top: 50px;
+      left: 370px;
+      background-image: url('https://static.todamateria.com.br/upload/ba/nd/bandeira_americana_bb.jpg');
+    }
+
+    #flag3 {
+      top: 270px;
+      left: 50px;
+      background-image: url('https://preview.redd.it/pxanfguda3s71.png?width=640&crop=smart&auto=webp&s=e6ad77bba9fce8bffd1bf223c9234fd9a630f8e8');
+    }
+
+    #flag4 {
+      top: 270px;
+      left: 370px;
+      background-image: url('https://http2.mlstatic.com/D_NQ_NP_912163-MLB46132557852_052021-O.jpg');
+    }
+
+    /* Efeitos ao passar o mouse */
+    #flag1:hover {
+      background-image: url('https://vejario.abril.com.br/wp-content/uploads/2016/11/373_screen-shot-2014-10-08-at-5-59-28-pm.png');
+    }
+
+    #flag2:hover {
+      background-image: url('https://a.cdn-hotels.com/gdcs/production6/d1738/3c1a71e7-0a73-4810-9935-5c4daea1954e.jpg?impolicy=fcrop&w=800&h=533&q=medium');
+    }
+
+    #flag3:hover {
+      background-image: url('https://www.eurodicas.com.br/wp-content/uploads/2021/12/morar-emportugal.jpg');
+    }
+
+    #flag4:hover {
+      background-image: url('https://franciscanos.org.br/noticias/wp-content/uploads/2021/04/terrasanta_01.jpg');
+    }
+
+    /* Animação inicial */
+    @keyframes growAndRotate {
+      to {
+        width: 300px;
+        height: 200px;
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="flag" id="flag1"></div>
+<div class="flag" id="flag2"></div>
+<div class="flag" id="flag3"></div>
+<div class="flag" id="flag4"></div>
+</body>
+</html>

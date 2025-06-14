@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .bolinha {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: inline-block;
+            margin: 10px;
+            border: 3px solid black;
+            position: fixed;
+            animation-fill-mode: forwards;
+            animation-iteration-count: infinite;
+            animation-duration: 5s;
+            animation-delay: 1s;
+        }
+
+        .bolinha.verde-claro {
+            background-color: #a5d65c;
+            top: 10px;
+            left: 100px;
+            animation-name: bolinha_verde_claro;
+
+        }
+        .bolinha.azul {
+            top: 10px;
+            left: 160px;
+            background-color: #5a91d4;
+            animation-name: azul;
+
+        }
+        .bolinha.preto {
+            background: linear-gradient(to bottom, black, gray);
+            top: 70px;
+            left: 10px;
+            animation-name: preto;
+        }
+        .bolinha.amarelo {
+            background-color: #fff200;
+            border-color: blue;
+            top: 10px;
+            left: 280px;
+            animation-name: amarelo;
+        }
+
+        .bolinha.verde-claro-2 {
+            background-color: #a5d65c;
+            top: 10px;
+            left: 340px;
+            animation-name: verde-claro-2;
+        }
+        .bolinha.cinza {
+            background: linear-gradient(to bottom, white, gray);
+            top: 130px;
+            left: 10px;
+            animation-name: cinza;
+        }
+        .bolinha.vermelho {
+            background-color: #b3b3b3;
+            border-color: red;
+            top: 10px;
+            left: 460px;
+            animation-name: vermelho;
+        }
+        .bolinha.laranja {
+            background: linear-gradient(0deg,rgba(75, 156, 191, 1) 25%, rgba(230, 158, 76, 1) 72%);
+            top: 190px;
+            left: 10px;
+            animation-name: at3;
+
+        }
+
+        @keyframes at3 {
+            0% {top: 190px;
+                left: 10px;}
+            25% {top: 190px;
+                left: 520px;}
+            50% { top: 10px;
+                left: 520px;)}
+            75%{top: 490px;
+                left: 520px;}
+            100% {top: 490px;
+                left: 10px;}
+        }
+        @keyframes bolinha_verde_claro {
+            0% {top: 10px;
+            left: 100px;}
+            25% {top: 10px;
+                left: 100px;}
+            50% { top: 10px;
+                left: 100px;)}
+            75%{top: 70px;
+                left: 100px;}
+            100% {top: 70px;
+                left: 10px;}
+        }
+
+        @keyframes azul {
+            0% {top: 10px;
+                left: 160px;}
+            25% {top: 10px;
+                left: 160px;}
+            50% { top: 10px;
+                left: 160px;)}
+            75%{top: 130px;
+                left: 160px;}
+            100% {top: 130px;
+                left: 10px;}
+        }
+        @keyframes preto {
+            0% {top: 70px;
+                left: 10px;}
+            25% {top: 70px;
+                left: 220px;}
+            50% { top: 10px;
+                left: 220px;)}
+            75% {top: 190px;
+                left: 220px;}
+            100% {top: 190px;
+                left: 10px;}
+        }
+        @keyframes amarelo {
+            0% {top: 10px;
+                left: 280px;}
+            25% {top: 10px;
+                left: 280px;}
+            50% {top: 10px;
+                left: 280px;}
+            75% {top: 250px;
+                left: 280px;}
+            100% {top: 250px;
+                left: 10px;}
+        }
+        @keyframes verde-claro-2 {
+            0% {top: 10px;
+                left: 340px;}
+            25% {top: 10px;
+                left: 340px;}
+            50% {top: 10px;
+                left: 340px;}
+            75% {top: 310px;
+                left: 340px;}
+            100% {top: 310px;
+                left: 10px;}
+        }
+        @keyframes cinza {
+            0% {top: 130px;
+                left: 10px;}
+            25% {top: 130px;
+                left: 400px;}
+            50% { top: 10px;
+                left: 400px;)}
+            70%{top: 370px;
+                left: 400px;}
+            100% {top: 370px;
+                left: 10px;}
+        }
+        @keyframes vermelho {
+            0% {top: 10px;
+                left: 460px;}
+            25% {top: 10px;
+                left: 460px;}
+            50% {top: 10px;
+                left: 460px;}
+            75% {top: 430px;
+                left: 460px;}
+            100% {top: 430px;
+                left: 10px;}
+        }
+
+    </style>
+</head>
+<body>
+<div class="bolinha verde-claro"></div>
+<div class="bolinha azul"></div>
+<div class="bolinha amarelo"></div>
+<div class="bolinha verde-claro-2"></div>
+<div class="bolinha vermelho"></div>
+
+<div class="bolinha preto"></div>
+<div class="bolinha cinza"></div>
+<div class="bolinha laranja"></div>
+</body>
+</html>
