@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+      *{
+        box-sizing: border-box;
+      }
+
+      body{
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .header{
+        background: linear-gradient(gray, white, gray);
+        padding: 10px;
+        text-align: center;
+        font-size: 35px;
+      }
+      .row{
+        display: flex;
+      }
+      .coluna{
+        padding: 10px;
+        height: 500px;
+      }
+      .coluna.side{
+        flex: 1;
+        background-color: #ccc;
+      }
+
+      .coluna.middle{
+        flex: 2;
+        background-color: #bbb;
+      }
+      .footer {
+        background-color: #f1f1f1;
+        padding: 10px;
+        text-align: center;
+      }
+      ul{
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          width: 100%;
+          background-color: gray;
+      }
+      li{
+          display: block;
+          color: black;
+          padding: 12px 16px;
+      }
+      li:hover{
+          background-color: #555;
+          color: white;
+          cursor: pointer;
+      }
+      .middle   p{
+          text-align: justify;
+
+      }
+      .footer{
+          height: 50px;
+          background-image: url("../img/maomao.jpg");
+          color: white;
+      }
+      .bola{
+          background-color: blue;
+          border-radius: 50%;
+          width: 50px;
+          height: 50px;
+          position: fixed;
+          top: 400px;
+          left: 890px;
+          animation-name: mover;
+          animation-duration: 5s;
+          animation-iteration-count: infinite;
+      }
+
+      @keyframes mover{
+          0%{top: 400px;
+              left: 890px;;}
+          50%{top: 850px;
+      left: 890px;}
+          100%{top: 400px;
+              left: 890px;;}
+      }
+    </style>
+</head>
+<body>
+  <div class="header">
+      <img src="../img/dragonite.jpg" alt="">
+  </div>
+
+  <div class="row">
+    <div class="coluna side">
+        <ul>
+            <li>Home</li>
+            <li>Categoria de base</li>
+            <li>Profissional</li>
+            <li>Titulos</li>
+            <li>Contato</li>
+        </ul>
+    </div>
+    <div class="coluna middle">
+        <img width="250" src="../img/SYLVEON.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus cumque distinctio doloribus ducimus eos fuga iure labore odio porro quia quibusdam recusandae repellat repudiandae, sapiente sint soluta unde vel, voluptatum?</p>
+    </div>
+    <div class="coluna side">
+        <div class="bola"></div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>Footer</p>
+  </div>
+
+</body>
+</html>
